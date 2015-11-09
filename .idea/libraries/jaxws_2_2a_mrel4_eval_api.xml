@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="jaxws-2_2a-mrel4-eval-api">
+    <CLASSES />
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../jaxws-2_2a-mrel4-eval-api.zip!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

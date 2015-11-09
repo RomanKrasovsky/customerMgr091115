@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://controller.customerMgr.suda.org/" xmlns:tns="http://controller.customerMgr.suda.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="getHelloWorld" type="tns:getHelloWorld"/>
+
+  <xs:element name="getHelloWorldResponse" type="tns:getHelloWorldResponse"/>
+
+  <xs:complexType name="getHelloWorld">
+    <xs:sequence>
+      <xs:element name="arg0" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="getHelloWorldResponse">
+    <xs:sequence>
+      <xs:element name="return" type="tns:customer" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="customer">
+    <xs:sequence>
+      <xs:element name="email" type="xs:string" minOccurs="0"/>
+      <xs:element name="firstname" type="xs:string" minOccurs="0"/>
+      <xs:element name="id" type="xs:int" minOccurs="0"/>
+      <xs:element name="lastname" type="xs:string" minOccurs="0"/>
+      <xs:element name="telephone" type="xs:string" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+
